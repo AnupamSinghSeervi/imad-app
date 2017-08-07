@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content = {
+var articleOne = {
     title : 'anupam | article 1',
     heading : 'Anupam Singh Seervi',
     content : `<p> 
@@ -26,10 +26,45 @@ var content = {
               ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
               AND MAKE REALLY SOMETHING BEAUTIFUL THAT
               CAN HELP OUR SOCETIY
-           </p> `,
+           </p> `
     
     
 };
+
+var htmlTemplate = `
+            <html>
+            
+            <head>
+              <title>${title}</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <link href="/ui/style.css" rel="stylesheet" />
+            
+            </head>
+            <body>
+                <div class = "container">
+                      <div> 
+                         <a href = "/">Head</a>
+                      </div>
+                        <hr/>
+                      <div>
+                         <h2>
+                          ${heading}
+                         </h2>
+                      </div>
+                      
+                      <div>
+                        ${content}
+                      
+                      </div>
+               </div>
+            </body>
+            
+            </html>
+
+
+`;
+
+
 
 
 
