@@ -29,7 +29,7 @@ var articles = {
            </p> `
 },
 
-'article-two ': {
+'article-two': {
     title : 'anupam | article 2',
     heading : 'Anupam Singh Seervi',
     content : `<p> 
@@ -52,7 +52,7 @@ var articles = {
            </p> `
 }, 
 
-'article-three ': {
+'article-three': {
     title : 'anupam | article 3',
     heading : 'Anupam Singh Seervi',
     content : `<p> 
