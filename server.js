@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var articleOne = {
+var articles = {
+    articleOne : {
     title : 'anupam | article 1',
     heading : 'Anupam Singh Seervi',
     content : `<p> 
@@ -27,8 +27,56 @@ var articleOne = {
               AND MAKE REALLY SOMETHING BEAUTIFUL THAT
               CAN HELP OUR SOCETIY
            </p> `
+}, 
+articleTwo : {
+    title : 'anupam | article 2',
+    heading : 'Anupam Singh Seervi',
+    content : `<p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p>
+            <p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p>
+            <p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p> `
+}, 
+
+articleThree : {
+    title : 'anupam | article 3',
+    heading : 'Anupam Singh Seervi',
+    content : `<p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p>
+            <p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p>
+            <p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p> `
+}, 
     
     
+    
+
 };
 
 function createTemplate(data) {
@@ -86,11 +134,11 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+res.send(createTemplate(articleTwo));
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+ res.send(createTemplate(articleThree));
 });
 
 app.get('/ui/style.css', function (req, res) {
