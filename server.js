@@ -72,7 +72,7 @@ articleThree : {
               AND MAKE REALLY SOMETHING BEAUTIFUL THAT
               CAN HELP OUR SOCETIY
            </p> `
-}, 
+}
     
     
     
