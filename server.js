@@ -5,6 +5,35 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var content = {
+    title : 'anupam | article 1',
+    heading : 'Anupam Singh Seervi',
+    content : `<p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p>
+            <p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p>
+            <p> 
+              Hi dear I AM TAKING TO YOURSELF THAT
+              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
+              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
+              CAN HELP OUR SOCETIY
+           </p> `,
+    
+    
+};
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
