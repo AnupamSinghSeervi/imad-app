@@ -19,7 +19,7 @@ body {
     height: 200px;
 }
 
-.container {
+body{
       max-width :800px;
       margin :0 auto;
       color : #080707;
