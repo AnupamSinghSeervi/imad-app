@@ -12,7 +12,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-//var articles = {
+/*var articles = {
 'article-one' : {
     title : 'anupam | article 1',
     heading : 'Anupam Singh Seervi',
@@ -82,7 +82,7 @@ app.use(morgan('combined'));
            </p> `
 }
 
-};
+};*/
 
 function createTemplate(data) {
     
