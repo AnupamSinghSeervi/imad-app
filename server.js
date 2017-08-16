@@ -165,9 +165,9 @@ app.get('/submit-name',function(req,res){
 app.get('/article/:articleName', function (req, res) {
     var articleName = req.params.articleName;
    
-    Pool.query("Select* from article where title="+req.params.articleName,function(err,result){
+    Pool.query("Select* from article where title='"+req.params.articleName+"'",function(err,result){
         if(err) {
-            res.status(500).send(err.toString())
+            res.status(500).send(err.toString());
         }
         else {
             if(result.rows.length ===0) {
