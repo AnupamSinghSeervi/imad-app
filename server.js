@@ -12,77 +12,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
-'article-one' : {
-    title : 'anupam | article 1',
-    heading : 'Anupam Singh Seervi',
-    content : `<p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p>
-            <p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p>
-            <p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p> `
-},
 
-'article-two': {
-    title : 'anupam | article 2',
-    heading : 'Anupam Singh Seervi',
-    content : `<p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p>
-            <p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p>
-            <p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p> `
-}, 
-
-'article-three': {
-    title : 'anupam | article 3',
-    heading : 'Anupam Singh Seervi',
-    content : `<p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p>
-            <p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p>
-            <p> 
-              Hi dear I AM TAKING TO YOURSELF THAT
-              ATLEAST PLEASE COMPLETE THESE ALL TUTORIAL SERIES
-              AND MAKE REALLY SOMETHING BEAUTIFUL THAT
-              CAN HELP OUR SOCETIY
-           </p> `
-}
-
-};
 
 function createTemplate(data) {
     
