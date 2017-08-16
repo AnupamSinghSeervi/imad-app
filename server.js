@@ -111,7 +111,8 @@ var htmlTemplate = `
                           ${heading}
                          </h2>
                       </div>
-                      
+                      <div>
+                      ${date}</div>
                       <div>
                         ${content}
                       
