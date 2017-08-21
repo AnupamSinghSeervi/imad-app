@@ -138,7 +138,7 @@ app.get('/', function (req, res) {
 });
 
 function hash(input,salt){
-    var hashed = crypto.createHmac('sha256', secret)
+    var hashed = crypto.createHmac('sha256', input)
                    .update(input)
                    .digest('hex');
     return hashed.toString('hex');
