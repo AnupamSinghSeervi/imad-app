@@ -184,8 +184,17 @@ app.post('/login',function(req,res){
         else {
         
         var dbString = result.rows[0].password;
-        res.send('user successfully created'+username);
+        var salt =dbString.split('$')[1];
+        var hashedPassword = hash(password,salt);
+        
+        if(hashedPassword == dbString) {
+        res.send('credentials are correct');
+        
     }
+    else {
+        res.send(403).send('username/password is not valid');
+    }
+        }
     }
     });
     
