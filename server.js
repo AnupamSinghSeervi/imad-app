@@ -148,7 +148,7 @@ function hash(input,salt){
 
 app.get('/hash/:input',function(req,res)
 {
-   var hashedString = hash(req.params.input,'this is and up with just an random string');
+   var hashedString = hash(req.params.input,'omg');
    res.send(hashedString);
 });
 
@@ -184,9 +184,9 @@ app.post('/login',function(req,res){
         else {
         
         var dbString = result.rows[0].password;
-        var salt = dbString.split('$')[1];
+        
          var hashedPassword = crypto.createHmac('sha512', password)
-                   .update(salt)
+                   .update('omg')
                    .digest('hex');
       
         if(hashedPassword === dbString) {
