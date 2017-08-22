@@ -184,6 +184,10 @@ app.post('/login',function(req,res){
         else {
         
         var dbString = result.rows[0].password;
+        var salt = dbString.split('$')[1];
+         var hashedPassword = crypto.createHmac('sha512', password)
+                   .update(salt)
+                   .digest('hex');
       
         if(hashedPassword === dbString) {
         res.send('credentials are correct');
